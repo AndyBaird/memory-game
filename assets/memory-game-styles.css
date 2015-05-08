@@ -1,0 +1,93 @@
+body {
+  background-color: #3F51B5
+}
+header {
+  display: block;
+}
+
+.clearfix {
+  padding-bottom: 5em;
+}
+
+.clearfix:after {
+  display:inline-block;
+  content: " "
+}
+
+.logo-container {
+  margin: auto;
+  margin-top: 2em;
+  max-width: 600px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 5em;
+  color:#ffffff;
+  text-transform:uppercase;
+}
+
+.heart-container {
+  float: left;
+  color:#ffffff;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+
+.timer-container {
+  float: right;
+  padding-right: 2em;
+  padding-top: 2em;
+  color:#ffffff;
+}
+
+
+.game {
+  text-align:center;
+  margin-right:1%;
+  margin-left: 1%;
+}
+
+/*.game:after {
+  content:'';
+  display:inline-block;
+  width:100%;
+}
+*/
+.tile {
+  width: 15%;
+  display: inline-block;
+  position:relative;
+  padding-bottom:15%;
+  background: #7986CB;
+  border-radius: .5em;
+}
+
+
+.card {
+  line-height: 0;
+  display: block;
+  position:absolute;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
+  z-index: -1;
+}
+
+input[type=checkbox]:checked + .card {
+background: #1F2034;
+z-index: 2;
+}
