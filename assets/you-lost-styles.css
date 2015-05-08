@@ -1,0 +1,43 @@
+body {
+  background: orange;
+  color:white;
+}
+
+
+.lost-container {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h1 {
+  font-size: 5em;
+  margin: .5em;
+}
+
+p {
+  font-size:2em;
+}
+
+.new-game-button-container {
+  position: relative;
+  margin-top: 1em;
+}
+
+.new-game-button {
+text-decoration: none;
+border: 3px solid white;
+font-size: 2em;
+color: white;
+padding: .7em;
+display: block;
+margin-top: 1em;
+}
+
+.new-game-button:hover {
+  background: white;
+  color: black;
+}
