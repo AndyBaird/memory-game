@@ -41,8 +41,6 @@ header {
   padding-top: 2em;
   color:#ffffff;
 }
-
-
 .game {
   text-align:center;
   margin-right:1%;
@@ -75,7 +73,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 input[type=checkbox] {
@@ -84,10 +83,25 @@ input[type=checkbox] {
   right: 1em;
   bottom: 1em;
   left: 1em;
-  z-index: -1;
+  opacity: 0;
 }
 
 input[type=checkbox]:checked + .card {
 background: #1F2034;
-z-index: 2;
+opacity: 1;
+}
+.audio {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+  max-width: 300px;
+}
+.homelink {
+  text-align: center;
+  margin: auto;
+  max-width:300px;
+}
+a{
+  color:white;
+  display: block;
 }
